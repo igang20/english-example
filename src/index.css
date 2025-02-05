@@ -36,8 +36,11 @@ code,
 
 .line {
   display: flex;
-  /* padding: 6px; */
+  line-height: 22px;
+  background-color: none;
+  transition: background-color ease-in 0.3s;
 }
+
 .line-number {
   padding: 0 5px;
   display: flex;
@@ -70,11 +73,11 @@ code,
   align-items: center;
   justify-content: space-evenly;
   gap: var(--base-gap);
-  padding: 3%;
-  width: 70vw;
+  padding: 40px;
+  width: 900px;
   /* background-color: rgba(0, , 100, 0.705); */
   background-color: #dedede;
-  height: 70vh;
+  height: 500px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
   -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
@@ -103,4 +106,19 @@ code,
   width: 100%;
   text-align: start;
   font-weight: bold;
+}
+
+.correct {
+  background-color: rgba(52, 201, 36, 0.4);
+  transition: background-color ease-in 0.2s;
+}
+
+.process {
+  background-color: rgba(25, 118, 210, 0.4);
+  transition: background-color ease-in 0.2s;
+}
+
+.error {
+  background-color: rgba(176, 0, 0, 0.4);
+  transition: background-color ease-in 0.2s;
 }
