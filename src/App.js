@@ -69,19 +69,19 @@ function App() {
 
     switch (operation) {
       case "add":
-        setResult(num1 + num2);
+        setResult(Number(num1) + Number(num2));
         calcVisual();
         break;
       case "subtract":
-        setResult(num1 - num2);
+        setResult(Number(num1) - Number(num2));
         calcVisual();
         break;
       case "multiply":
-        setResult(num1 * num2);
+        setResult(Number(num1) * Number(num2));
         calcVisual();
         break;
       case "divide":
-        setResult(num1 / num2);
+        setResult(Number(num1) / Number(num2));
         calcVisual();
         break;
       default:
